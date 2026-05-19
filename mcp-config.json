@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "notebooklm": {
+      "command": "npx",
+      "args": ["notebooklm-mcp@latest"],
+      "env": {
+        "HEADLESS": "true",
+        "NOTEBOOKLM_PROFILE": "full",
+        "ANSWER_TIMEOUT_MS": "600000"
+      }
+    }
+  }
+}
