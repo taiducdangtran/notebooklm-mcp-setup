@@ -1,0 +1,6 @@
+{
+  "name": "enterprise-search",
+  "version": "1.2.0",
+  "description": "Find anything across email, chat, documents, and wikis without switching between apps.",
+  "author": { "name": "Anthropic" }
+}
