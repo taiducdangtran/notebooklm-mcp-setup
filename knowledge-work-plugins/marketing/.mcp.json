@@ -1,0 +1,68 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${SLACK_TEAM_ID}"
+      }
+    },
+    "canva": {
+      "type": "http",
+      "url": "https://mcp.canva.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CANVA_API_KEY}"
+      }
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FIGMA_API_KEY}"
+      }
+    },
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com/anthropic",
+      "headers": {
+        "Authorization": "Bearer ${HUBSPOT_API_KEY}"
+      }
+    },
+    "amplitude": {
+      "type": "http",
+      "url": "https://mcp.amplitude.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AMPLITUDE_API_KEY}"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_TOKEN": "${NOTION_API_TOKEN}"
+      }
+    },
+    "ahrefs": {
+      "type": "http",
+      "url": "https://api.ahrefs.com/mcp/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AHREFS_API_KEY}"
+      }
+    },
+    "similarweb": {
+      "type": "http",
+      "url": "https://mcp.similarweb.com",
+      "headers": {
+        "Authorization": "Bearer ${SIMILARWEB_API_KEY}"
+      }
+    },
+    "klaviyo": {
+      "type": "http",
+      "url": "https://mcp.klaviyo.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${KLAVIYO_API_KEY}"
+      }
+    }
+  }
+}
